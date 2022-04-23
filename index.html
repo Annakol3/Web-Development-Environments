@@ -4,6 +4,9 @@
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
+<nav class="navbar">
+ <img class="logo" src="images/Logo.png ">
+<ul class="nav-links">
 <div id="menu">
 <li><a href="#about">About Me</a></li>
 <li><a href="#photos">My Photos</a></li>
@@ -13,117 +16,136 @@
 <li><a href="#spa">Q&A</a></li>
 <li><a href="#contact">Contact Me</a></li>
 </div>
+</ul>
+</nav>
 		  
 <section id="about" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
+<h1><a href="#0">About me</a></h1>
+<img src="images/Arnold_Schwarzenegger_by_Gage_Skidmore_4.jpg" style="height:600px; margin:100px; float: left;" alt="A pretend invisible person wearing a hat, glasses, and coat.">
+<div style="height:600px;margin:100px">
+  <h2>Hello! </h2>
+  <p style="line-height: 2.0; font-size:14px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">my name is Arnold Alois Schwarzenegger. I was born at Thal, Styria, Allied-occupied Austria,1947.
+  I am an Austrian-American actor, film producer, businessman, former bodybuilder and politician who served as the 38th governor of California between 2003 and 2011.
+at age 20 I won  Mr. Universe title,subsequently winning the Mr. Olympia contest seven times.I was inspired by his father, Arnold pushed himself towards sports from a young age and deep-dived into weightlifting and bodybuilding
+Nowdays im an actor and film preducer , a family man ,father and grandfather</p>
+</div>
 </section>
 
 <section id="photos" class="section">
+<h1><a href="#0">My photos</a></h1>
 <br/>
 <br/>
 <br/>
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
-<br/>
-<br/>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 6</div>
+    <img src="images/1596612696_arnold.webp" style="width:100%">
+    <div class="text">My Family</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 6</div>
+    <img src="images/ARNOLD.jpg" style="width:100%">
+    <div class="text">BEST FRIEND FRANCO COLUMBU</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 6</div>
+    <img src="images/the-life-of-arnold-schwarzenegger-740x500-1-1519815195.jpg" style="width:100%">
+    <div class="text">The life of Arnold Schwarzenegger</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 6</div>
+    <img src="images/merlin_186656619_4c7fe307-ac34-47b4-a6eb-6eb2c96669ad-superJumbo.webp" style="width:100%">
+    <div class="text">Good times from my Career as a politician</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 6</div>
+    <img src="images/Flex-Gym-Budapest-Terminator.webp" style="width:100%">
+    <div class="text">On the set of the new Terminator movie</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 6</div>
+    <img src="images/500.webp" style="width:100%">
+    <div class="text">My pets</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+</div>
+<script>
+  let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
 </section>
 
 <section id="playlist" class="section">
+<h1><a href="#0">My playlist</a></h1>
+><div style="text-align:center">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/btPJPFnesV4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
-<br/>
-<br/>
+</div>
 </section>
 
 <section id="like" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
-<br/>
+<h1><a href="#0">give me a like</a></h1>
+><div style="text-align:center; margin:auto;padding:100px;">
+<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Farnold&width=450&layout=standard&action=like&size=small&share=true&height=35&appId" width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>  
+</div>
 </section>
 
 <section id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
+
+<h1><a href="#0">scan my code</a></h1>
 <br/>
 <br/>
 <br/>
@@ -146,31 +168,69 @@ scan my code
 <br/>
 <br/>
 <br/>
-ans
+<h1><a href="#0">Ans</a></h1>
 <br/>
 <br/>
 <br/>
 </section>
 
 <section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
+<h1><a href="#0">contact me</a></h1>
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+   <!-- <title> Responsive Contact Us Form  | CodingLab </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">3110 Main Street , Suite 300 , Santa Monica,USA</div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">(310)396-5917</div>
+ 
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">Arnold@gmail.com</div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Send us a message</div>
+        <p>Feel free to drop us a line below!</p>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Enter your name">
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="Enter your email">
+        </div>
+        <div class="input-box message-box">
+          <textarea  type="text" placeholder="Enter your message"></textarea>
+        </div>
+        <div class="button">
+          <input type="button" value="Send Now" >
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+</body>
+</html>
+
 <br/>
 <br/>
 </section>
