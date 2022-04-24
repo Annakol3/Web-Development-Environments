@@ -2,4 +2,4 @@
 
 תז:321892408
 
-כתובת האתר :https://web-development-environments-2022.github.io/assignment1-Annakol3/
+כתובת האתר :https://web-development-environments-2022.github.io/321892408/
