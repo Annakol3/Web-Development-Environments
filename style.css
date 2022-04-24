@@ -573,6 +573,12 @@ body {
   transform: translate(95vw,90vh);
   transform: translate(95vw,90vh);
 }
+.ans{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+}
+
 
 
 
